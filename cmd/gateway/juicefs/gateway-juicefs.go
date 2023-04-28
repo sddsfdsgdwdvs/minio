@@ -1058,3 +1058,13 @@ func (n *JfsObjects) cleanup() {
 		}
 	}
 }
+
+// IsNotificationSupported returns whether bucket notification is applicable for this layer.
+func (a *JfsObjects) IsNotificationSupported() bool {
+	return true
+}
+
+// IsListenSupported returns whether listen bucket notification is applicable for this layer.
+func (a *JfsObjects) IsListenSupported() bool {
+	return true
+}
